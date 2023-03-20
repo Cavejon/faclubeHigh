@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+.logoHigh {
+    width: 18.125rem;
+    height: 6.3125rem;
+    top: 3.5rem;
+    left: 49.25rem;
+    position: absolute;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.faleConosco {
+ position: absolute;
+    width: 33%;
+    left: 33%;
+    top: 25%;
+    font-family: 'Inter', 'sans-serif';
+  
+}
+
+.sugestoesAqui {
+    font-family: 'Inter';
+}
+
+.faleConosco input,
+.faleConosco textarea,
+.faleConosco select {
+    margin: 5px auto;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.faleConosco textaera {
+    height: 100px;
+    resize: none;
+}
+
+.faleConosco button {
+    box-sizing: border-box;
+    position: absolute;
+    width: 84px;
+    height: 22px;
+    left: 38%;
+    top: 57%;
+}
+
+.show {
+    display: block;
+}
+
+#topoId {
+    position: absolute;
+    width: 186px;
+    height: 29px;
+    left: 43%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 29px;
+    line-height: 36px;
+    top: 24%;
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+}
+
+.overlay-content {
+    position: relative;
+    top: 37%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Inter';
+}
+
+.overlay a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Inter';
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    font-size: 70px;
+}
+
+#menuNav {
+    display: flex;
+    padding: 3.625rem;
+    max-width: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 37px;
+    height: 35px;
+    text-decoration: none;
+}
+
+.btn::after {
+    content: "↑";
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    transition: margin-top 250ms;
+}
+
+.btn:hover::after {
+    margin-top: -8px;
+}
+
+#btnClear {
+left: 34.1rem;
+    top: 25rem;
+}
+
+#btnSubmit {
+        left: 0.4375rem;
+            top: 25rem;
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    font-family: 'Inter';
+}
+
+/***************************
+Validador para o formulário name
+**************************/
+#nameError {
+    display: none;
+    font-size: 0.8em;
+}
+
+#nameError.visible {
+    display: block;
+}
+
+input.invalid {
+    border-color: red;
+}

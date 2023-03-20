@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Site fã clube high">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta name="keywords" content="Fã Clube HighComapny">
+    <link rel="stylesheet" type="text/css" href="../../../css/sugestoes.css">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <title>SUGESTÕES</title>
+</head>
+
+<body onload='document.form1.text1.focus()'>
+
+
+    <!--Fechar Display-->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            × </a>
+
+        <div class="overlay-content">
+            <a href="../../../index.html">HISTÓRIA</a> <a href="sugestoes.html">SUGESTÕES</a>
+            <a href="lookBook.html">LOOKBOOK</a> <a href="contatos.html">CONTATOS</a>
+        </div>
+        <!--Conteúdo display-->
+        </div>
+        <!--Fechar Display-->
+
+
+        <!--NavBar em javaScript-->
+    <span id="menuNav" style="font-size: 73px; cursor: pointer" onclick="openNav()"> ≡ </span>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.display = "block";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.display = "none";
+        }
+    </script>
+<!--NavBar em javaScript-->
+    
+
+<!--Logo high-->
+    <div>
+        <a href="/index.html">
+            <img src="/imgs/HIGHLOGO.png" alt="logo da HIGH" class="logoHigh">
+        </a>
+    </div>
+<!--Logo high-->
+
+<!--Formulário-->
+    <section class="faleConosco">
+
+        <form name="frmsugestões" method="post" action="#">
+            <fieldset>
+                <legend>Preencha</legend>
+
+                <label for="nome"><i class="ph-user"></i>NOME: </label> <label for="firstname"></label> <input
+                    type="text" name="nome " required id="firstname" placeholder="PRENCHA COM SEU NOME!">
+
+                <label for="mail"><i class="ph-envelope"></i>E-MAIL: </label>
+                <input type="email" id="email" placeholder="DIGITE O SEU E-MAIL!">
+
+                <label for="fone"><i class="ph-phone"></i>TELEFONE: </label> <input type="text" name="txtfone" id="fone"
+                    placeholder="DIGITE O SEU TELEFONE COMPLETO!">
+
+            </fieldset>
+
+            <fieldset class="sugestoesAqui">
+                <legend>Motivo do contato:</legend>
+                <label for="motivo"><i class="ph-arrow-bend-up-right"></i>Motivo:</label>
+                <select name="selmotivo" id="motivo">
+                    <option value="">Escolha</option>
+                    <option value="RE">Reclamação</option>
+                    <option value="SU">Sugestão</option>
+                </select> <label for="comentario">Sugestão:</label>
+                <textarea name="txacomentario" id="comentario" placeholder="DIGITE A SUA SUGESTÃO!"></textarea>
+                <button id="btnClear" type="reset">Limpar</button>
+                <button id="btnSubmit" type="submit">Enviar</button>
+
+            </fieldset>
+        </form>
+    </section>
+
+    <!--Formulário-->
+
+    <script type="text/javascript" src="menuDropDown.js"></script>
+    <script type="text/javascript" src="formvalidador.js"></script>
+
+</body>
+
+</html>

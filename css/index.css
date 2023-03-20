@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+:root {
+    width: 96.3%;
+}
+
+
+.logoHigh {
+    width: 18.125rem;
+        height: 6.3125rem;
+        top: 3.5rem;
+        left: 49.25rem;
+        position: absolute;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.flyer {
+    position: absolute;
+        width: 16.5rem;
+        height: 12.375rem;
+        left: 5.3125rem;
+    display: block;
+    top: 17.8125rem;
+}
+
+.disneycalca {
+
+    left: 5.3125rem;
+top: 34rem;
+    position: absolute;
+        width: 16.5rem;
+        height: 12.375rem;
+}
+
+.chuteira {
+ 
+left: 97.125rem;
+    top: 17.75rem;
+    position: absolute;
+        width: 16.5rem;
+        height: 12.375rem;
+}
+
+section p {
+position: absolute;
+    width: 49.1875rem;
+    left: 34.75rem;
+    font-size: 1.1900rem;
+    line-height: 1.8125rem;
+    text-align: center;
+    top: 18.9375rem;
+}
+
+.poloUmbro {
+    position: absolute;
+left: 97.125rem;
+    top: 34rem;
+        width: 16.5rem;
+            height: 12.375rem;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu {
+    height: 70px;
+    list-style: none;
+    gap: .5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: "Inter";
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.overlay-content {
+    position: relative;
+    top: 37%;
+    width: 100%;
+    text-align: center;
+}
+
+.overlay a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    font-size: 70px;
+}
+
+#menuNav {
+    display: flex;
+    padding: 3.625rem;
+    max-width: 10px;
+}
+
